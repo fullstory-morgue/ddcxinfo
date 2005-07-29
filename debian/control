@@ -2,6 +2,7 @@ Source: ddcxinfo-kanotix
 Section: x11
 Priority: optional
 Maintainer: Joerg Schirottke <master@kanotix.com>
+Uploaders: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>> 4.0.0)
 Standards-Version: 3.6.2
 
