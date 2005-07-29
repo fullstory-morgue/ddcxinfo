@@ -1,0 +1,12 @@
+Source: ddcxinfo-kanotix
+Section: x11
+Priority: optional
+Maintainer: Joerg Schirottke <master@kanotix.com>
+Build-Depends: debhelper (>> 4.0.0)
+Standards-Version: 3.6.2
+
+Package: ddcxinfo-kanotix
+Architecture: i386 amd64 powerpc
+Depends: ${shlibs:Depends}
+Description: Monitor/ Graphics card DDC hardware detection
+ Part of the KANOTIX hardware detection suite.

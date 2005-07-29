@@ -1,0 +1,23 @@
+        /* Standard timings. */
+        for(i = 0; i < 8; i++) {
+                double aspect = 1;
+                unsigned int x, y;
+                unsigned char xres, vfreq;
+                xres = edid_info->standard_timing[i].xresolution;
+                vfreq = edid_info->standard_timing[i].vfreq;
+                if((xres != vfreq) ||
+                   ((xres != 0) && (xres != 1)) ||
+                   ((vfreq != 0) && (vfreq != 1))) {
+                        switch(edid_info->standard_timing[i].aspect) {
+                                case 0: aspect = 1; break; /*undefined*/
+                                case 1: aspect = 0.750; break;
+                                case 2: aspect = 0.800; break;
+                                case 3: aspect = 0.625; break;
+                        }
+                        x = (xres + 31) * 8;
+                        y = x * aspect;
+                        printf("Standard timing %d: %d Hz, %dx%d\n", i,
+                               (vfreq & 0x3f) + 60, x, y);
+                }
+        }
+

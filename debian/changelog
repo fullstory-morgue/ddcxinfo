@@ -1,0 +1,110 @@
+ddcxinfo-kanotix (0.6.13) unstable; urgency=low
+
+  * recompile with gcc-4.0.
+  * adapt for dpkg 1.1.13.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 29 Jul 2005 20:51:56 +0200
+
+ddcxinfo-kanotix (0.6.12) unstable; urgency=low
+
+  * Added 1024x600 and 1280x768 for laptops
+
+ -- Joerg Schirottke <master@kanotix.com>  Sat,  4 Jun 2005 12:16:23 +0200
+
+ddcxinfo-kanotix (0.6-11) unstable; urgency=low
+
+  * Better emulation script
+
+ -- Joerg Schirottke <master@kanotix.com>  Thu, 23 Dec 2004 03:57:10 +0100
+
+ddcxinfo-kanotix (0.6-10) unstable; urgency=low
+
+  * Added WXGA (1440x900) for laptops 
+
+ -- Joerg Schirottke <master@kanotix.com>  Wed, 24 Nov 2004 19:57:17 +0100
+
+ddcxinfo-kanotix (0.6-9) unstable; urgency=low
+
+  * add preliminary x86_64 support. 
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun,  7 Nov 2004 02:03:57 +0100
+
+ddcxinfo-kanotix (0.6-8) unstable; urgency=low
+
+  * Added WXGA (1366x768) for laptops
+
+ -- Joerg Schirottke <master@kanotix.com>  Fri, 24 Sep 2004 16:33:49 +0200
+
+ddcxinfo-kanotix (0.6-7) unstable; urgency=low
+
+  * Added 3 modelines for laptops
+
+ -- Joerg Schirottke <master@kanotix.com>  Thu, 22 Jul 2004 13:59:43 +0200
+
+ddcxinfo-kanotix (0.6-6) unstable; urgency=low
+
+  * added noml option (patch from xzcvczx)
+
+ -- Joerg Schirottke <master@kanotix.com>  Thu, 29 Jan 2004 21:28:21 +0100
+
+ddcxinfo-kanotix (0.6-5) unstable; urgency=low
+
+  * Changed default vsync to 75Hz again because there are no good default
+    modelines for 60Hz.
+
+ -- Klaus Knopper <knoppix@knopper.net>  Wed, 12 Nov 2003 20:22:07 +0100
+
+ddcxinfo-kanotix (0.6-4) unstable; urgency=low
+
+  * re-added extended modelines (hope this is OK)
+
+ -- Klaus Knopper <knoppix@knopper.net>  Sat, 20 Sep 2003 19:54:13 +0200
+
+ddcxinfo-kanotix (0.6-3) unstable; urgency=low
+
+  * removed extended_modelines add-on in case of correctly reported modelines
+
+ -- Klaus Knopper <knoppix@knopper.net>  Thu, 11 Sep 2003 20:55:05 +0200
+
+ddcxinfo-kanotix (0.6-2) unstable; urgency=low
+
+  * Using VESA timings as default modelines
+  
+ -- Joerg Schirottke <master@kanotix.com>  Sun, 27 Jul 2003 09:44:39 +0200
+
+ddcxinfo-kanotix (0.6-1) unstable; urgency=low
+
+  * Modified to max out the monitor
+
+ -- Joerg Schirottke <master@kanotix.com> Sun, 27 Jul 2003 01:09:00 +0200
+
+ddcxinfo-kanotix (0.5-5) unstable; urgency=low
+
+  * Add 1024x768 modeline also if Monitor is not ddc-capable
+
+ -- Klaus Knopper <knoppix@knopper.net> Tue, 25 Feb 2003 19:36:14 +0100
+
+ddcxinfo-kanotix (0.5-4) unstable; urgency=low
+
+  * Add a 1024x768 mode if the monitor can handle it, but there are no modelines for it
+
+ -- Klaus Knopper <knoppix@knopper.net>  Tue, 25 Feb 2003 02:09:26 +0100
+
+ddcxinfo-kanotix (0.5-3) unstable; urgency=low
+
+  * Correction of max modeline algorithm
+
+ -- Klaus Knopper <knoppix@knopper.net>  Sat, 22 Feb 2003 18:38:00 +0100
+
+ddcxinfo-kanotix (0.5-2) unstable; urgency=low
+
+  * Added better "bestmodeline" for TFT displays
+
+ -- Klaus Knopper <knoppix@knopper.net>  Mon, 17 Feb 2003 22:57:17 +0100
+
+ddcxinfo-kanotix (0.5-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Klaus Knopper <knoppix@knopper.net>  Sun, 16 Feb 2003 04:34:21 +0100
+

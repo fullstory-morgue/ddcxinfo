@@ -1,0 +1,35 @@
+.\"                                      Hey, EMACS: -*- nroff -*-
+.\" First parameter, NAME, should be all caps
+.\" Second parameter, SECTION, should be 1-8, maybe w/ subsection
+.\" other parameters are allowed: see man(7), man(1)
+.TH DDCXINFO-KANOTIX 1 "Februar 16, 2003"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.\" Some roff macros, for reference:
+.\" .nh        disable hyphenation
+.\" .hy        enable hyphenation
+.\" .ad l      left justify
+.\" .ad b      justify to both left and right margins
+.\" .nf        disable filling
+.\" .fi        enable filling
+.\" .br        insert line break
+.\" .sp <n>    insert n+1 empty lines
+.\" for manpage-specific macros, see man(7)
+.SH NAME
+ddcxinfo-kanotix \- program for generating MONITOR and MODES sections in XF86Config
+.SH SYNOPSIS
+.B ddcxinfo-kanotix
+.RI [ -monitor ]\ [ -modes ]\ [ -firstmode\ mode ]
+.SH OPTIONS
+.TP
+.B \-monitor
+Generate XF86Config entry for Monitor with DDC-probed or default values to stdout.
+.TP
+.B \-modes
+Generate line of valid modes for this monitor, using DDC and some common sense checks.
+.TP
+.B \-firstmode mode
+Add this mode as first entry for Modes line.
+.SH AUTHOR
+This manual page was written by Klaus Knopper <knoppix@knopper.net>,
+for the Debian GNU/Linux system (but may be used by others). 
