@@ -1,3 +1,9 @@
+ddcxinfo-kanotix (0.6.15) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 Sep 2005 03:48:24 +0200
+
 ddcxinfo-kanotix (0.6.14) unstable; urgency=low
 
   * re- indent ModeLines.
@@ -75,20 +81,20 @@ ddcxinfo-kanotix (0.6-3) unstable; urgency=low
 ddcxinfo-kanotix (0.6-2) unstable; urgency=low
 
   * Using VESA timings as default modelines
-  
+
  -- Joerg Schirottke <master@kanotix.com>  Sun, 27 Jul 2003 09:44:39 +0200
 
 ddcxinfo-kanotix (0.6-1) unstable; urgency=low
 
   * Modified to max out the monitor
 
- -- Joerg Schirottke <master@kanotix.com> Sun, 27 Jul 2003 01:09:00 +0200
+ -- Joerg Schirottke <master@kanotix.com>  Sun, 27 Jul 2003 01:09:00 +0200
 
 ddcxinfo-kanotix (0.5-5) unstable; urgency=low
 
   * Add 1024x768 modeline also if Monitor is not ddc-capable
 
- -- Klaus Knopper <knoppix@knopper.net> Tue, 25 Feb 2003 19:36:14 +0100
+ -- Klaus Knopper <knoppix@knopper.net>  Tue, 25 Feb 2003 19:36:14 +0100
 
 ddcxinfo-kanotix (0.5-4) unstable; urgency=low
 
