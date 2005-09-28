@@ -152,10 +152,10 @@ const char *extended_modelines=
 "       ModeLine \"1440x900\"  106.47  1440 1520 1672 1904  900 901 904 932  -HSync +Vsync\n"
 "	# 1600x1200 @ 100.00 Hz (GTF) hsync: 127.10 kHz; pclk: 280.64 MHz\n"
 "	ModeLine \"1600x1200\"  280.64  1600 1728 1904 2208  1200 1201 1204 1271  -HSync +Vsync\n"
-"       # 1680x1050 @ 60.00 Hz (GTF) hsync: 65.22 kHz; pclk: 147.14 MHz\n"
-"       ModeLine \"1680x1050\"  147.14  1680 1784 1968 2256  1050 1051 1054 1087  -HSync +Vsync\n"
-"       # 1920x1200 @ 60.00 Hz (GTF) hsync: 74.52 kHz; pclk: 193.16 MHz\n"
-"       ModeLine \"1920x1200\"  193.16  1920 2048 2256 2592  1200 1201 1204 1242  -HSync +Vsync\n";
+"	# 1680x1050 @ 60.00 Hz (GTF) hsync: 65.22 kHz; pclk: 147.14 MHz\n"
+"	ModeLine \"1680x1050\"  147.14  1680 1784 1968 2256  1050 1051 1054 1087  -HSync +Vsync\n"
+"	# 1920x1200 @ 60.00 Hz (GTF) hsync: 74.52 kHz; pclk: 193.16 MHz\n"
+"	ModeLine \"1920x1200\"  193.16  1920 2048 2256 2592  1200 1201 1204 1242  -HSync +Vsync\n";
 
 const char *monitor_end=
 "EndSection\n";
