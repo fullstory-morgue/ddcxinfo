@@ -1,3 +1,9 @@
+ddcxinfo-kanotix (0.6.16) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 31 Oct 2005 00:33:17 +0100
+
 ddcxinfo-kanotix (0.6.15) unstable; urgency=low
 
   * Added 1440x1050 for laptops.
