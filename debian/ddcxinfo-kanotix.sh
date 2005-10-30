@@ -133,6 +133,8 @@ Section "Monitor"
 	ModeLine "1400x1050"  214.39  1400 1512 1664 1928  1050 1051 1054 1112  -HSync +Vsync
 	# 1440x900 @ 60.00 Hz (GTF) hsync: 55.92 kHz; pclk: 106.47 MHz
 	ModeLine "1440x900"  106.47  1440 1520 1672 1904  900 901 904 932  -HSync +Vsync
+	# 1440x1050 @ 60.00 Hz (GTF) hsync: 65.22 kHz; pclk: 126.27 MHz
+	ModeLine "1440x1050"  126.27  1440 1536 1688 1936  1050 1051 1054 1087  -HSync +Vsync
 	# 1600x1200 @ 100.00 Hz (GTF) hsync: 127.10 kHz; pclk: 280.64 MHz
 	ModeLine "1600x1200"  280.64  1600 1728 1904 2208  1200 1201 1204 1271  -HSync +Vsync
 	# 1680x1050 @ 60.00 Hz (GTF) hsync: 65.22 kHz; pclk: 147.14 MHz

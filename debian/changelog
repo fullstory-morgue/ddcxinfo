@@ -1,8 +1,8 @@
-ddcxinfo-kanotix (0.6.15) UNRELEASED; urgency=low
+ddcxinfo-kanotix (0.6.15) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * Added 1440x1050 for laptops.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 Sep 2005 03:48:24 +0200
+ -- Joerg Schirottke <master@kanotix.com>  Sun, 30 Oct 2005 17:35:50 +0100
 
 ddcxinfo-kanotix (0.6.14) unstable; urgency=low
 
@@ -81,7 +81,7 @@ ddcxinfo-kanotix (0.6-3) unstable; urgency=low
 ddcxinfo-kanotix (0.6-2) unstable; urgency=low
 
   * Using VESA timings as default modelines
-
+ 
  -- Joerg Schirottke <master@kanotix.com>  Sun, 27 Jul 2003 09:44:39 +0200
 
 ddcxinfo-kanotix (0.6-1) unstable; urgency=low
