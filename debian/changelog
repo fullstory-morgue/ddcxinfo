@@ -1,8 +1,10 @@
-ddcxinfo-kanotix (0.6.16) UNRELEASED; urgency=low
+ddcxinfo-kanotix (0.6.16) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * move build procedure to cdbs.
+  * use bash fallback for all architectures.
+  * bump compat level to 5.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 31 Oct 2005 00:33:17 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 18 Feb 2006 22:37:47 +0100
 
 ddcxinfo-kanotix (0.6.15) unstable; urgency=low
 
