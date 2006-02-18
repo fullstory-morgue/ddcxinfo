@@ -3,8 +3,9 @@ ddcxinfo-kanotix (0.6.16) unstable; urgency=low
   * move build procedure to cdbs.
   * use bash fallback for all architectures.
   * bump compat level to 5.
+  * add manpage.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 18 Feb 2006 22:37:47 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 18 Feb 2006 23:14:08 +0100
 
 ddcxinfo-kanotix (0.6.15) unstable; urgency=low
 
