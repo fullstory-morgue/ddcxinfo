@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>> 5.0.0), cdbs
-Standards-Version: 3.6.2
+Standards-Version: 3.7.2
 
 Package: ddcxinfo-kanotix
 Architecture: any
