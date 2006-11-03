@@ -1,8 +1,8 @@
-ddcxinfo-kanotix (0.6.18) UNRELEASED; urgency=low
+ddcxinfo-kanotix (0.6.18) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * change XF86Config-4 to xorg.conf in manpages.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 31 Oct 2006 23:46:36 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri,  3 Nov 2006 18:28:47 +0100
 
 ddcxinfo-kanotix (0.6.17) unstable; urgency=low
 
