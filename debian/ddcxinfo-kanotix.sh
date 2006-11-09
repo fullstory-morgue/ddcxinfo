@@ -1,6 +1,8 @@
-#!/bin/sh
-case $1 in
--monitor) cat<<EOT
+#!/bin/bash
+
+case "$1" in
+	-monitor)
+		cat<<EOT
 Section "Monitor"
 	Identifier   "Monitor0"
 #	HorizSync    28.0 - 78.0 # Warning: This may fry very old Monitors
@@ -143,8 +145,9 @@ Section "Monitor"
 	ModeLine "1920x1200"  193.16  1920 2048 2256 2592  1200 1201 1204 1242  -HSync +Vsync
 EndSection
 EOT
-;;
--monitor-noml)cat<<EOT
+		;;
+	-monitor-noml)
+		cat<<EOT
 Section "Monitor"
 	Identifier   "Monitor0"
 #	HorizSync    28.0 - 78.0 # Warning: This may fry very old Monitors
@@ -153,43 +156,59 @@ Section "Monitor"
 #	VertRefresh  50.0 - 62.0 # Extreme conservative. Will flicker. TFT default.
 EndSection
 EOT
-;;
--modes)
-MODE_NUM=6
-MODE_X[1]=640
-MODE_Y[1]=480
-MODE_X[2]=800
-MODE_Y[2]=600
-MODE_X[3]=1024
-MODE_Y[3]=768
-MODE_X[4]=1152
-MODE_Y[4]=864
-MODE_X[5]=1280
-MODE_Y[5]=1024
-MODE_X[6]=1400
-MODE_Y[6]=1050
-if [ "$2" == "-firstmode" ]; then
-X=1024
-Y=768
-if echo $3|grep -q '^[0-9]\{3,4\}*x[0-9]\{3,4\}*$'; then
-X=$(echo $3|cut -f1 -dx)
-Y=$(echo $3|cut -f2 -dx)
-fi
-MODE_MAX=0
-for i in $(seq $MODE_NUM); do
- [[ ${MODE_X[$i]} -le $X && ${MODE_Y[$i]} -le $Y && ${MODE_X[$i]} != $X && ${MODE_Y[$i]} != $Y ]] && MODE_MAX=$i
-done
-MODE_MIN=0
-for i in $(seq $MODE_MAX -1 1); do
- [[ ${MODE_X[$i]} -le $X && ${MODE_Y[$i]} -le $Y && ${MODE_X[$i]} != $X && ${MODE_Y[$i]} != $Y ]] && MODE_MIN=$i
-done
-echo -n Modes \"${X}x${Y}\"
-[ $MODE_MIN -gt 0 ] && for i in $(seq $MODE_MAX -1 $MODE_MIN); do
-echo -n " \"${MODE_X[$i]}x${MODE_Y[$i]}\""
-done
-echo
-else
-echo Modes \"1024x768\" \"800x600\" \"640x480\"
-fi
-;;
+		;;
+	-modes)
+		MODE_NUM=6
+		MODE_X[1]=640
+		MODE_Y[1]=480
+		MODE_X[2]=800
+		MODE_Y[2]=600
+		MODE_X[3]=1024
+		MODE_Y[3]=768
+		MODE_X[4]=1152
+		MODE_Y[4]=864
+		MODE_X[5]=1280
+		MODE_Y[5]=1024
+		MODE_X[6]=1400
+		MODE_Y[6]=1050
+
+		if [ "$2" = "-firstmode" ]; then
+			X=1024
+			Y=768
+			
+			if echo "$3"|grep -q '^[0-9]\{3,4\}*x[0-9]\{3,4\}*$'; then
+				X="$(echo $3|cut -f1 -dx)"
+				Y="$(echo $3|cut -f2 -dx)"
+			fi
+			
+			MODE_MAX=0
+			for i in $(seq "$MODE_NUM"); do
+				[ "${MODE_X[$i]}" -le "$X" ] && \
+					[ "${MODE_Y[$i]}" -le "$Y" ] && \
+					[ "${MODE_X[$i]}" != "$X" ] && \
+					[ "${MODE_Y[$i]}" != "$Y" ] && \
+					MODE_MAX="$i"
+			done
+
+			MODE_MIN=0
+			for i in $(seq "$MODE_MAX" -1 1); do
+				[ "${MODE_X[$i]}" -le "$X" ] && \
+					[ "${MODE_Y[$i]}" -le "$Y" ] && \
+					[ "${MODE_X[$i]}" != "$X" ] && \
+					[ "${MODE_Y[$i]}" != "$Y" ] && \
+					MODE_MIN="$i"
+			done
+			echo -n "Modes \"${X}x${Y}\""
+
+			if [ "$MODE_MIN" -gt 0 ]; then
+				for i in $(seq "$MODE_MAX" -1 "$MODE_MIN"); do
+					echo -n " \"${MODE_X[$i]}x${MODE_Y[$i]}\""
+				done
+			fi
+			echo
+		else
+			echo "Modes \"1024x768\" \"800x600\" \"640x480\""
+		fi
+		;;
 esac
+
