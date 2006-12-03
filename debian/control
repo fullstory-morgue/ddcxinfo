@@ -1,12 +1,13 @@
-Source: ddcxinfo-kanotix
+Source: ddcxinfo-sidux
 Section: x11
 Priority: optional
 Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>> 5.0.0), cdbs
 Standards-Version: 3.7.2
 
-Package: ddcxinfo-kanotix
+Package: ddcxinfo-sidux
 Architecture: any
 Depends: ${shlibs:Depends}
+Conflicts: ddcxinfo-kanotix
 Description: Monitor/ Graphics card DDC hardware detection
- Part of the KANOTIX hardware detection suite.
+ Part of the Sidux hardware detection suite.

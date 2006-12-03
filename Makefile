@@ -1,6 +1,6 @@
 CFLAGS=-Wall -O2 -g# -DDEBUG
 
-TARGETS=ddcprobe svgamodes ddcxinfo ddcxinfo-kanotix modetest libvbe.a
+TARGETS=ddcprobe svgamodes ddcxinfo ddcxinfo-sidux modetest libvbe.a
 
 ifeq (.depend,$(wildcard .depend))
 TARGET=all
@@ -21,7 +21,7 @@ svgamodes: lrmi.o vesamode.o vbe.o svgamodes.o
 
 ddcxinfo: lrmi.o vesamode.o vbe.o ddcxinfo.o
 
-ddcxinfo-kanotix: lrmi.o vesamode.o vbe.o ddcxinfo-kanotix.o
+ddcxinfo-sidux: lrmi.o vesamode.o vbe.o ddcxinfo-sidux.o
 
 modetest: lrmi.o vesamode.o vbe.o modetest.o
 

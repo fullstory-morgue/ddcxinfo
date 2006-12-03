@@ -1,8 +1,10 @@
-ddcxinfo-kanotix (0.6.20) UNRELEASED; urgency=low
+ddcxinfo-sidux (0.6.20) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  9 Nov 2006 19:20:20 +0100
+  * Initial version for sidux
+
+ -- Joaquim Boura <x-un-i@sidux.com>  Sun,  3 Dec 2006 18:01:17 +0100
 
 ddcxinfo-kanotix (0.6.19) unstable; urgency=low
 

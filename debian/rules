@@ -12,18 +12,18 @@ else
 	export REAL_EDID=0
 endif
 
-build/ddcxinfo-kanotix::
+build/ddcxinfo-sidux::
 	if test $(REAL_EDID) -eq 1; then \
-		$(MAKE) ddcxinfo-kanotix; \
+		$(MAKE) ddcxinfo-sidux; \
 	fi
 
-install/ddcxinfo-kanotix::
+install/ddcxinfo-sidux::
 	# Add here commands to install the package into debian/ddcxinfo-kanotix.
 	install -m 755 -d $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/sbin
 	if test $(REAL_EDID) -eq 1; then \
-		install -m 755 ddcxinfo-kanotix $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/sbin/; \
+		install -m 755 ddcxinfo-sidux $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/sbin/; \
 	else \
-		install -m 755 $(CURDIR)/debian/ddcxinfo-kanotix.sh $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/sbin/ddcxinfo-kanotix; \
+		install -m 755 $(CURDIR)/debian/ddcxinfo-sidux.sh $(CURDIR)/debian/$(DEB_SOURCE_PACKAGE)/usr/sbin/ddcxinfo-sidux; \
 	fi
 
 clean::
