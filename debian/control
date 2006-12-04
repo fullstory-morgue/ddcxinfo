@@ -10,4 +10,4 @@ Architecture: any
 Depends: ${shlibs:Depends}
 Conflicts: ddcxinfo-kanotix
 Description: Monitor/ Graphics card DDC hardware detection
- Part of the Sidux hardware detection suite.
+ Part of the sidux hardware detection suite.
