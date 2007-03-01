@@ -8,6 +8,5 @@ Standards-Version: 3.7.2
 Package: ddcxinfo-sidux
 Architecture: any
 Depends: ${shlibs:Depends}
-Conflicts: ddcxinfo-kanotix
 Description: Monitor/ Graphics card DDC hardware detection
  Part of the sidux hardware detection suite.

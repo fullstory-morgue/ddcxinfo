@@ -1,8 +1,9 @@
-ddcxinfo-sidux (0.6.21) UNRELEASED; urgency=low
+ddcxinfo-sidux (0.6.21) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * ddcxinfo-kanotix was never part of sidux or debian, don't conflict with
+    it.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue,  5 Dec 2006 11:47:52 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 16:53:04 +0100
 
 ddcxinfo-sidux (0.6.20) unstable; urgency=low
 
