@@ -1,8 +1,9 @@
-ddcxinfo-sidux (0.6.22) UNRELEASED; urgency=low
+ddcxinfo-sidux (0.6.22) ORPHANED; urgency=low
 
   * NOT RELEASED YET
+  * ORPHAN PACKAGE.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu,  1 Mar 2007 16:55:02 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 26 Sep 2007 14:47:00 +0200
 
 ddcxinfo-sidux (0.6.21) unstable; urgency=low
 
